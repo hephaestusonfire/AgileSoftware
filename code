@@ -1,0 +1,13 @@
+def calculate_rectangle_area(length, width):
+    return length * width
+import unittest
+from rectangle import calculate_rectangle_area
+
+class RectangleTestCase(unittest.TestCase):
+    def test_calculate_rectangle_area(self):
+        self.assertEqual(calculate_rectangle_area(5, 3), 15)
+        self.assertEqual(calculate_rectangle_area(2, 4), 8)
+        self.assertEqual(calculate_rectangle_area(0, 5), 0)
+
+if __name__ == '__main__':
+    unittest.main()
